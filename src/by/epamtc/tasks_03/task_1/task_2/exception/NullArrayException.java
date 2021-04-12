@@ -1,4 +1,4 @@
-package task_2.exception;
+package epamtc.tasks_03.task_1.task_2.exception;
 
 public class NullArrayException extends Exception{
     public NullArrayException() {

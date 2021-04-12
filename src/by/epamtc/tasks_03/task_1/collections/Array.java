@@ -1,8 +1,8 @@
-package task_1.collections;
+package epamtc.tasks_03.task_1.collections;
 
-import task_1.exception.ArrayIndexOutOfBoundsException;
-import task_1.exception.ArrayNotSortedException;
-import task_1.service.IntegerService;
+import epamtc.tasks_03.task_1.exception.ArrayIndexOutOfBoundsException;
+import epamtc.tasks_03.task_1.exception.ArrayNotSortedException;
+import epamtc.tasks_03.task_1.service.IntegerService;
 
 import java.util.function.Predicate;
 

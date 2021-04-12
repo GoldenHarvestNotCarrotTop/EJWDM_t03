@@ -1,8 +1,8 @@
-package task_1.service;
+package epamtc.tasks_03.task_1.service;
 
-import task_1.collections.Array;
-import task_1.exception.NotEnoughDataException;
-import task_1.exception.WrongSizeException;
+import epamtc.tasks_03.task_1.collections.Array;
+import epamtc.tasks_03.task_1.exception.NotEnoughDataException;
+import epamtc.tasks_03.task_1.exception.WrongSizeException;
 
 import java.io.File;
 import java.io.FileNotFoundException;

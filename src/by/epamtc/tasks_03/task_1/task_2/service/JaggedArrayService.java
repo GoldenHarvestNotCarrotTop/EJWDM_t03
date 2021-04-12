@@ -1,9 +1,9 @@
-package task_2.service;
+package epamtc.tasks_03.task_1.task_2.service;
 
-import task_2.comparator.MaxComparator;
-import task_2.comparator.MinComparator;
-import task_2.comparator.SumComparator;
-import task_2.exception.NullArrayException;
+import epamtc.tasks_03.task_1.task_2.comparator.MaxComparator;
+import epamtc.tasks_03.task_1.task_2.comparator.MinComparator;
+import epamtc.tasks_03.task_1.task_2.comparator.SumComparator;
+import epamtc.tasks_03.task_1.task_2.exception.NullArrayException;
 
 import java.util.Comparator;
 

@@ -1,7 +1,7 @@
-package task_1.service;
+package epamtc.tasks_03.task_1.service;
 
-import task_1.collections.Array;
-import task_1.exception.ArrayIndexOutOfBoundsException;
+import epamtc.tasks_03.task_1.collections.Array;
+import epamtc.tasks_03.task_1.exception.ArrayIndexOutOfBoundsException;
 
 import java.util.HashSet;
 import java.util.Set;

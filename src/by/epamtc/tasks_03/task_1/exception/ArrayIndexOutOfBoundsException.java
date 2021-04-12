@@ -1,4 +1,4 @@
-package task_1.exception;
+package epamtc.tasks_03.task_1.exception;
 
 public class ArrayIndexOutOfBoundsException extends Exception{
     public ArrayIndexOutOfBoundsException() {
