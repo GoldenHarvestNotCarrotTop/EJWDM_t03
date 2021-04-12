@@ -1,7 +1,7 @@
-package epamtc.tasks_03.task_1.task_2.comparator;
+package epamtc.tasks_03.task_2.comparator;
 
-import epamtc.tasks_03.task_1.task_2.exception.NullArrayException;
-import epamtc.tasks_03.task_1.task_2.service.ArrayService;
+import epamtc.tasks_03.task_2.exception.NullArrayException;
+import epamtc.tasks_03.task_2.service.ArrayService;
 
 import java.util.Comparator;
 

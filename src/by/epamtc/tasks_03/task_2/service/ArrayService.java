@@ -1,6 +1,6 @@
-package epamtc.tasks_03.task_1.task_2.service;
+package epamtc.tasks_03.task_2.service;
 
-import epamtc.tasks_03.task_1.task_2.exception.NullArrayException;
+import epamtc.tasks_03.task_2.exception.NullArrayException;
 
 public class ArrayService {
     public static int sum(int[] a) throws NullArrayException {
