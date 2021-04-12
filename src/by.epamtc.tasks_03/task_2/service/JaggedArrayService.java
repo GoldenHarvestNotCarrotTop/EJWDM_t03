@@ -1,8 +1,8 @@
 package task_2.service;
 
-import task_2.comparators.MaxComparator;
-import task_2.comparators.MinComparator;
-import task_2.comparators.SumComparator;
+import task_2.comparator.MaxComparator;
+import task_2.comparator.MinComparator;
+import task_2.comparator.SumComparator;
 import task_2.exception.NullArrayException;
 
 import java.util.Comparator;

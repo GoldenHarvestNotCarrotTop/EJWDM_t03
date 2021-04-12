@@ -1,4 +1,4 @@
-package task_2.comparators;
+package task_2.comparator;
 
 import task_2.service.ArrayService;
 
