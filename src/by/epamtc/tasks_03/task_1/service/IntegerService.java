@@ -20,14 +20,14 @@ public class IntegerService {
 
     public static boolean isFib(int n) {
         try {
-            for (int i = 0; i < fibCache.getSize(); i++) {
+            for (int i = 0; i < fibCache.size(); i++) {
                 if (n == fibCache.get(i))
                     return true;
             }
-            while (fibCache.get(fibCache.getSize() - 1) <= n && fibCache.get(fibCache.getSize() - 1) > 0) {
-                if (n == fibCache.get(fibCache.getSize() - 1))
+            while (fibCache.get(fibCache.size() - 1) <= n && fibCache.get(fibCache.size() - 1) > 0) {
+                if (n == fibCache.get(fibCache.size() - 1))
                     return true;
-                fibCache.add(fibCache.get(fibCache.getSize() - 1) + fibCache.get(fibCache.getSize() - 2));
+                fibCache.add(fibCache.get(fibCache.size() - 1) + fibCache.get(fibCache.size() - 2));
             }
             return false;
         } catch (ArrayIndexOutOfBoundsException e) {

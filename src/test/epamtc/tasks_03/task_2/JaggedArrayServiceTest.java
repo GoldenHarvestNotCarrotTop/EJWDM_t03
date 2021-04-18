@@ -5,6 +5,8 @@ import org.junit.jupiter.api.Test;
 import epamtc.tasks_03.task_2.exception.NullArrayException;
 import epamtc.tasks_03.task_2.service.JaggedArrayService;
 
+import java.util.Optional;
+
 class JaggedArrayServiceTest {
     int[][] a;
 
@@ -20,6 +22,7 @@ class JaggedArrayServiceTest {
 
     @Test
     void sort() throws NullArrayException {
+        Optional
         JaggedArrayService.sort(a, (int[] o1, int[] o2) -> o1[0] - o2[0], true);
         printArr();
     }

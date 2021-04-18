@@ -132,7 +132,7 @@ public class Array {
     }
 
     public int lower_bound(int value) throws ArrayNotSortedException, ArrayIndexOutOfBoundsException {
-        if (size == 0)
+        if (isEmpty())
             throw new ArrayIndexOutOfBoundsException("Array must not be empty when lower bound!");
         if (!isSorted()) {
             throw new ArrayNotSortedException("Array must be sorted before lower bound!");
@@ -158,7 +158,7 @@ public class Array {
         if (isSorted())
             return array[size - 1];
         int mx = array[0];
-        for (int i = 1; i < getSize(); i++)
+        for (int i = 1; i < size(); i++)
             mx = Math.max(mx, array[i]);
         return mx;
     }
@@ -170,7 +170,7 @@ public class Array {
         if (isSorted())
             return array[0];
         int mn = array[0];
-        for (int i = 1; i < getSize(); i++)
+        for (int i = 1; i < size(); i++)
             mn = Math.min(mn, array[i]);
         return mn;
     }
@@ -196,7 +196,7 @@ public class Array {
         return filter(IntegerService::hasOnlyThreeDifferentDigits);
     }
 
-    public int getSize() {
+    public int size() {
         return size;
     }
 
@@ -234,14 +234,11 @@ public class Array {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Array array1 = (Array) o;
-        if (array1.getSize() != this.getSize())
+        if (size != array1.size)
             return false;
-        for (int i = 0; i < getSize(); i++) {
-            try {
-                if(this.get(i) != array1.get(i))
-                    return false;
-            } catch (ArrayIndexOutOfBoundsException e) {
-                return false;
+        for (int i = 0; i < size; i++) {
+            if(array[i] != array1.array[i]){
+               return false;
             }
         }
         return true;

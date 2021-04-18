@@ -28,12 +28,12 @@ public class ArrayService {
 
             a = new Array();
 
-            while (scanner.hasNext() && a.getSize() != size) {
+            while (scanner.hasNext() && a.size() != size) {
                 a.add(scanner.nextInt());
             }
         }
 
-        if (a.getSize() != size) {
+        if (a.size() != size) {
             throw new NotEnoughDataException("File has less integers than size parameter");
         }
         return a;
@@ -48,11 +48,11 @@ public class ArrayService {
 
         System.out.println("Write integers every in its own line");
 
-        while (scanner.hasNextInt() && a.getSize() != size) {
+        while (scanner.hasNextInt() && a.size() != size) {
             a.add(scanner.nextInt());
         }
 
-        if (a.getSize() != size) {
+        if (a.size() != size) {
             throw new NotEnoughDataException("Stdin has less integers than size parameter");
         }
         return a;

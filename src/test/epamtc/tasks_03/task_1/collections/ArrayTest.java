@@ -30,7 +30,7 @@ class ArrayTest {
         assertEquals(array.get(0), arrayList.get(0));
         assertEquals(array.get(1), arrayList.get(1));
         assertEquals(array.get(3), arrayList.get(3));
-        assertEquals(array.getSize(), arrayList.size());
+        assertEquals(array.size(), arrayList.size());
         assertEquals(array.get(arrayList.size() - 1), arrayList.get(arrayList.size() - 1));
         assertThrows(ArrayIndexOutOfBoundsException.class, () -> array.get(arrayList.size()));
         assertThrows(ArrayIndexOutOfBoundsException.class, () -> array.get(-1));
